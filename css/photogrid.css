@@ -1,0 +1,120 @@
+/* 
+    Document   : main
+    Created on : Jul 29, 2011, 10:27:22 AM
+    Author     : danielcarter
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+#gallery_container {
+    background-color: white;
+    border: 1px solid blue;
+    margin: 0px auto;
+    position: relative;
+    width: 940px;
+}
+
+#gallery_layouts {
+    margin: 20px auto;
+    position: relative;
+    width: 901px
+}
+
+.row { 
+    display: block;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 0px;
+}
+
+.row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.row .layout {
+    background-color: lightgray;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.row .layout:last-child {
+    margin-right: 0px;
+}
+
+/* 1 Horizontal */
+.row .layout_1 {
+    width: 900px;
+    height: 600px;
+}
+
+.row .layout_1 img {
+	width:100%;
+}
+
+/* 2 Verticals */
+.row .layout_2 {
+    width: 448px;
+    height: 672px;
+}
+
+.row .layout_2 img {
+	height:100%;
+}
+
+/* 3 Verticals */
+.row .layout_3 {
+    width: 296px;
+    height: 444px;
+}
+
+.row .layout_3 img {
+	height:100%;
+}
+
+/* 3 Horizontals */
+.row .layout_4 {
+    width: 296px;
+    height: 197px;
+}
+
+.row .layout_4 img {
+	width:100%;
+}
+
+/* 2 Horizontal */
+.row .layout_5 {
+    width: 448px;
+    height: 298px;
+}
+
+.row .layout_5 img {
+	width:100%;
+}
+
+.clear-all {
+    
+}
+
